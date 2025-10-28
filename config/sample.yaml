@@ -1,0 +1,26 @@
+version: 1
+global:
+  defaults:
+    tap_hold_timeout_ms: 350
+    display:
+      theme: "dark"
+devices:
+  demo_pad:
+    hardware_id: "usb:demo.pad"
+    pages:
+      - name: "Main"
+        widgets:
+          - id: pad_1
+            action:
+              type: macro
+              ref: copy
+            tap_behavior: tap
+macros:
+  copy:
+    status: ready
+    trigger:
+      type: note
+      number: 60
+    steps:
+      - type: keystroke
+        keys: [Ctrl, C]

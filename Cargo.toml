@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "runtime/core",
+    "tools/cache_format",
+    "tools/cache_builder",
+    "tools/config_validator"
+]
+resolver = "2"

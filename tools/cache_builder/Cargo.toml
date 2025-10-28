@@ -1,0 +1,14 @@
+[package]
+name = "cache_builder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4.5", features = ["derive"] }
+config_validator = { path = "../config_validator" }
+cache_format = { path = "../cache_format" }
+serde_yaml = "0.9"
+thiserror = "1"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+bincode = "1"
