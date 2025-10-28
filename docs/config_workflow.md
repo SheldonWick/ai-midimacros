@@ -82,6 +82,7 @@ virtual_console:
 ### Error Handling
 - Validation errors reported to UI with precise file/line via diagnostics channel.
 - Runtime never applies partially valid configs; continues using last-known-good state.
+- Console manager caches widget-level warnings (e.g., devices referencing draft macros) so the UI can annotate affected controls directly.
 - Assistant can query diagnostics to guide fixes.
 
 ### Semantic Validation Rules (Initial)
